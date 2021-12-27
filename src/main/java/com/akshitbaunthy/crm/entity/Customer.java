@@ -57,16 +57,16 @@ public class Customer {
 		super();
 	}
 
+	// All args constructor. This will be used in case of an update.
 	public Customer(int id, String firstName, String lastName, String email) {
-		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
 
+	// Constructor with only 3 args. The missing argument is ID of the customer which is the primary key and is auto-generated in case of an insertion.
 	public Customer(String firstName, String lastName, String email) {
-		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
